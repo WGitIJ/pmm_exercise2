@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pmm_exercise2/screens/home_temp.dart';
+import 'package:pmm_exercise2/screens/home_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Components',
-      home: HomePageTemp(),
+      home: HomePage(),
     );
   }
 }
