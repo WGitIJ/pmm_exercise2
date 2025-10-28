@@ -4,6 +4,8 @@ class HomePageTemp extends StatelessWidget {
   final elements = ['Title 1', 'Title 2', 'Title 3'];
   final elementsMap = ['Contact 1', 'Contact 2', 'Contact 3'];
 
+  HomePageTemp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

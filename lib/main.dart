@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pmm_exercise2/screens/home_page.dart';
+import 'package:pmm_exercise2/screens/card_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Components',
       home: HomePage(),
+      routes: <String, WidgetBuilder>{
+        'card' : (BuildContext context) => Cardpage(),
+      },
     );
   }
 }
