@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pmm_exercise2/providers/menu_providers.dart';
 import 'package:pmm_exercise2/screens/alert_page.dart';
+import 'package:pmm_exercise2/utils/icono_string_utils.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -36,7 +37,7 @@ List<Widget> _listaElementos(BuildContext context, List<dynamic>? data) {
   data?.forEach((elemento) {
     final widgetTemp = ListTile(
       title: Text(elemento['texte']),
-      leading: Icon(Icons.account_circle, color: Colors.blue),
+      leading: getIcon(elemento['icona']),
       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
       onTap: () {
         Navigator.pushNamed(context, elemento['ruta']);

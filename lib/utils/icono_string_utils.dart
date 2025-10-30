@@ -10,4 +10,7 @@ final _icon = <String, IconData>{
   'accessibility': Icons.accessibility,
   'folder_open': Icons.folder_open,
   'donut_large': Icons.donut_large,
+  'input': Icons.input,
+  'tune': Icons.tune,
+  'list': Icons.list
 };
