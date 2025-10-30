@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pmm_exercise2/providers/menu_providers.dart';
-import 'package:pmm_exercise2/screens/alert_page.dart';
 import 'package:pmm_exercise2/utils/icono_string_utils.dart';
 
 class HomePage extends StatelessWidget {
