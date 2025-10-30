@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pmm_exercise2/screens/alert_page.dart';
+import 'package:pmm_exercise2/screens/animated_container.dart';
 import 'package:pmm_exercise2/screens/avatar_page.dart';
 import 'package:pmm_exercise2/screens/home_page.dart';
 import 'package:pmm_exercise2/screens/card_page.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         'alert': (BuildContext context) => AlertPage(),
         'avatar': (BuildContext context) => AvatarPage(),
         'card': (BuildContext context) => Cardpage(),
+        'animatedContainer': (BuildContext context) => AnimatedContainerPage(),
         
       },
     );
