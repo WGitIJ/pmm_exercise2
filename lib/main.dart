@@ -4,6 +4,7 @@ import 'package:pmm_exercise2/screens/animated_container.dart';
 import 'package:pmm_exercise2/screens/avatar_page.dart';
 import 'package:pmm_exercise2/screens/home_page.dart';
 import 'package:pmm_exercise2/screens/card_page.dart';
+import 'package:pmm_exercise2/screens/input_pages.dart';
 
 void main() => runApp(const MyApp());
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         'avatar': (BuildContext context) => AvatarPage(),
         'card': (BuildContext context) => Cardpage(),
         'animatedContainer': (BuildContext context) => AnimatedContainerPage(),
+        'inputs': (BuildContext context) => InputPage(),
         
       },
     );
