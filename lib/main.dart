@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pmm_exercise2/screens/alert_page.dart';
+import 'package:pmm_exercise2/screens/avatar_page.dart';
 import 'package:pmm_exercise2/screens/home_page.dart';
 import 'package:pmm_exercise2/screens/card_page.dart';
 
@@ -10,11 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
       debugShowCheckedModeBanner: false,
       title: 'Components',
       home: HomePage(),
       routes: <String, WidgetBuilder>{
-        'card' : (BuildContext context) => Cardpage(),
+        'home': (BuildContext context) => HomePage(),
+        'alert': (BuildContext context) => AlertPage(),
+        'avatar': (BuildContext context) => AvatarPage(),
+        'card': (BuildContext context) => Cardpage(),
+        
       },
     );
   }
