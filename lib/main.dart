@@ -5,6 +5,7 @@ import 'package:pmm_exercise2/screens/avatar_page.dart';
 import 'package:pmm_exercise2/screens/home_page.dart';
 import 'package:pmm_exercise2/screens/card_page.dart';
 import 'package:pmm_exercise2/screens/input_pages.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(const MyApp());
 
@@ -25,8 +26,18 @@ class MyApp extends StatelessWidget {
         'card': (BuildContext context) => Cardpage(),
         'animatedContainer': (BuildContext context) => AnimatedContainerPage(),
         'inputs': (BuildContext context) => InputPage(),
-        
       },
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en', ''), // English, no country code
+        Locale('es', ''), // Spanish, no country code
+      ],
+
+
     );
   }
 }
