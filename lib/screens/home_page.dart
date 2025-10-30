@@ -39,9 +39,7 @@ List<Widget> _listaElementos(BuildContext context, List<dynamic>? data) {
       leading: Icon(Icons.account_circle, color: Colors.blue),
       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
       onTap: () {
-        final route = MaterialPageRoute(builder: (context) => AlertPage());
-        Navigator.push(context, route);
-        Navigator.pushNamed(context, 'card');
+        Navigator.pushNamed(context, elemento['ruta']);
       },
     );
     elementos.add(widgetTemp);
